@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Loader from './components/loader/Loader';
+import {MyLoader} from './components/loader/Loader';
 import {getImagesWithDelay} from './api';
 import Button from './components/button/Button';
 import ImageGallery from './components/imageGallery/ImageGallery';
@@ -95,7 +95,7 @@ class App extends Component {
             closeModal={this.closeModal}
           ></Modal>
         )}
-        {this.state.showLoader && <Loader></Loader>}
+        {this.state.showLoader && <MyLoader></MyLoader>}
       </>
     );
   }
